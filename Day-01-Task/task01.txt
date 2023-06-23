@@ -1,0 +1,62 @@
+write a blog on difference between http1.1 vs http2?
+HTTP 1.1:-
+  1, One Connection per Request: In HTTP 1.1, each request/response transaction
+   required a new TCP connection to be established. While this ensured simplicity,
+   it led to high overhead due to the need for multiple connections.
+
+ 2, Inefficient Header Compression: HTTP 1.1's headers were plain text, and the
+   repetitive nature of headers caused significant overhead. This inefficiency 
+   impacted the speed and latency of web pages.
+
+ 3, Lack of Multiplexing: In the absence of multiplexing, HTTP 1.1 was unable to 
+   handle concurrent requests over a single connection. This limitation led to 
+   delays and slower page loading times.
+
+HTTP/2 :-
+ 1, Multiplexing: One of the significant improvements in HTTP/2 is the introduction
+    of multiplexing. With multiplexing, multiple requests and responses can be sent 
+    over a single TCP connection simultaneously. This feature greatly improves the 
+    efficiency of data transfer and reduces latency, allowing for faster page loading times.
+
+ 2, Header Compression: HTTP/2 utilizes a more efficient compression algorithm called
+   HPACK for compressing header data. This optimization significantly reduces the 
+   overhead caused by repetitive headers, improving performance and speed.
+
+ 3, Server Push: HTTP/2 introduces the concept of server push, which allows servers
+   to proactively send resources to the client before they are requested. This  
+   feature eliminates the need for additional round trips and enables faster page rendering.
+
+ 4, Prioritization: HTTP/2 enables the prioritization of requests, allowing more critical 
+   resources to be delivered first. This prioritization enhances the user experience by ensuring
+   that essential elements of a web page are loaded quickly, improving perceived performance.
+
+ 5, Binary Protocol: Unlike the plain text nature of HTTP 1.1, HTTP/2 uses a binary protocol. 
+   The binary framing mechanism makes parsing and processing more efficient for both servers and clients.
+
+Write a blog about objects and its internal representation in Javascript?
+Objects:-
+      JavaScript, being an object-oriented programming language, relies heavily on objects for data 
+      manipulation and functionality. Objects in JavaScript are dynamic, flexible, and powerful 
+      entities that play a central role in the language.
+Internal representation in Javascrip :-
+      Every object has some property associated with some value. These values can be accessed 
+      using these properties associated with them.
+
+      for example:-
+      var person = {
+                name:"hari"
+                age:27
+                city:"chennai"
+              };
+    for(var key in person){
+                  console.log(person[key];
+              }
+             O/P :- hari
+                    25
+                    chennai.
+
+Thanks & Regards,
+S Hariharasudhan
+B49-Tamil
+
+
