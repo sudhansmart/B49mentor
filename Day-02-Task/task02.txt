@@ -1,0 +1,52 @@
+The Window Object:
+ The Window object represents the browser window or tab that contains the web page.
+ It is the global object in the browser's JavaScript environment and serves as the 
+ entry point for interacting with the browser window. 
+ characteristicsof the Window object:
+
+ Global Scope: The Window object is available globally, and variables and functions 
+ declared without using the var, let, or const keywords become properties of the Window object. 
+ This means that variables and functions defined in the global scope are accessible through the 
+ Window object.
+
+ Browser Window Control: The Window object provides methods and properties to control the browser
+ window, such as resizing the window, navigating to different URLs, opening new windows or tabs, 
+ closing windows, and more. It also manages the browser's history and allows access to information
+ about the window, such as its dimensions, location, and scroll position.
+
+ Timers and Events: The Window object is responsible for managing timers and events. It provides 
+ methods like setTimeout and setInterval to schedule code execution after a specified delay.
+ Additionally, it handles events such as click, load, scroll, and many others that occur within
+ the browser window.
+
+ Access to Document Object: Through the Window object, you can access the Document object
+ which represents the web page's DOM (Document Object Model) structure. The Document object
+ provides methods and properties to manipulate the elements and content of the web page.
+
+ The Document Object:
+  The Document object represents the web page itself, providing an interface to access and 
+  manipulate its content. It is a property of the Window object, accessible through the window.
+  document or simply document notation. 
+ characteristics of the Document object:
+
+ DOM Manipulation: The Document object provides methods and properties to interact with the
+ web page's structure and elements. It allows you to access and modify elements, create new
+ elements dynamically, change styles and classes, manipulate content, handle events, and perform
+ other operations on the document's DOM.
+
+Access to Window Object: Although the Document object is a property of the Window object,
+ it does not have direct control over the browser window. However, it provides access to the
+ Window object's methods and properties through the defaultView property. For example, you can
+ use document.defaultView to access the Window object and perform actions on the browser window.
+
+Document-Level Events: The Document object handles document-level events, such as the DOMContentLoaded
+ event, which fires when the initial HTML document has been completely loaded and parsed. It also includes
+ events like click, submit, keydown, and others that occur within the document.
+
+Special Properties: The Document object has special properties, such as document.title to get or set the
+ title of the web page, document.body to access the body element, document.head to access the head element,
+ and document.documentElement to access the root element (usually the <html> element) of the document.
+
+Thanks&Regards,
+S Hariharasudhan
+B49-Tamil
