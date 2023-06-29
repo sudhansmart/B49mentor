@@ -1,0 +1,61 @@
+comparison of two JSON:-
+
+let json1 = '{"name":"Hari","age":27}';
+let json2 = '{"age":28,"name":"Sudhan"}';
+
+function comparison(json1,json2){
+    let obj1 = JSON.parse(json1);
+    let obj2 = JSON.parse(json2);
+    
+    if(Object.keys(obj1).length != Object.keys(obj2).length){
+        return false;
+    }
+    for(let key in obj1){
+        if(!obj2.hasOwnProperty(key) || obj1[key] !== obj2[key]) {
+      return false;
+    }
+  }
+  return true
+    }
+    const result = comparison(json1, json2);
+console.log(result);
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //Request was successful
+          console.log(xhr.responseText);
+          var countriesDetails = JSON.parse(xhr.responseText);
+          for (var i = 0; i < countriesDetails.length; i++) {
+            console.log(countriesDetails[i].flag);
+          }
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+
